@@ -123,7 +123,7 @@ $(document).ready(function(){
                         if(obj[i].Username == name2){
                             console.log(obj[i]);
                             console.log("matched new user");
-                            id1 = obj[i].id;
+                            id2 = obj[i].id;
                         }
                     }
                 }
@@ -160,6 +160,8 @@ function update(cellid){  //      "O"
              {
                     score1 = score1 + 10;
                     score2 = score2 - 5;
+                    document.getElementById("score2").innerHTML = score2;
+                    document.getElementById("score1").innerHTML = score1;
                     Username = name1;
                     Score = score1;
                     id = id1;
@@ -203,6 +205,8 @@ function update(cellid){  //      "O"
                 
                     score1 = score1 - 5;
                     score2 = score2 + 10;
+                    document.getElementById("score2").innerHTML = score2;
+                    document.getElementById("score1").innerHTML = score1;
                     Username = name1;
                     Score = score1;
                     id = id1;
@@ -224,19 +228,18 @@ function update(cellid){  //      "O"
                 setTimeout(function(){alert("------------DRAW------------")},10);
             }
         }
-}    
+}
     console.log(arr);
 }
 function reset(){
     arrP1.length = 0;
-    console.log(arrP1);
     arrP2.length = 0;
     arr.length = 0;
     turn = 0;
     for(var i =1;i<=9;i++){
         document.getElementById(i).innerHTML = "";
-
     }
+    
 }
 
 function putthis(myOBJ,id){
