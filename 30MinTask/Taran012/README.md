@@ -1,1 +1,1 @@
-https://ecstatic-darwin-b242f1.netlify.com
+https://taran-tic-tac-toe.netlify.com/
