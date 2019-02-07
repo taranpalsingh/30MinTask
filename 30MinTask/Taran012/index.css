@@ -17,6 +17,8 @@ section{
     justify-content: space-between;
 }
 .entity{
+    
+    border-radius: 15px;
     padding: 10px;
     display: flex;
     flex-direction: column;
